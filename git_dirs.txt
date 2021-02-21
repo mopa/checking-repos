@@ -1,3 +1,0 @@
-/Documents/Dotfiles
-/Documents/Repos/debian_server
-/Documents/Scripts/Check_Git_Repos
