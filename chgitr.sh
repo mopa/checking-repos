@@ -6,6 +6,8 @@
 # Colores
 blue="\e[0;94m"
 purple="\e[0;35m"
+red="\e[0;31m"
+green="\e[0;92m"
 reset="\e[0m"
 
 # Limpiamos la pantalla
@@ -38,33 +40,27 @@ while IFS= read -r line; do
     if [ $(git status | grep modified -c) -ne 0 ]
     then
       var=1
-      echo -en "\033[0;31m"
-      echo "Ficheros modificados"
-      echo -en "\033[0m"
+      echo -e "${red}Ficheros modificados${reset}"
     fi
 
     # Comprobamos los ficheros que no estan es seguimiento
     if [ $(git status | grep Untracked -c) -ne 0 ]
     then
       var=1
-      echo -en "\033[0;31m"
-      echo "Ficheros sin seguimiento"
-      echo -en "\033[0m"
+      echo -e "${red}Ficheros sin seguimiento${reset}"
     fi
 
     # Comprobamos si no hay commit
     if [ $(git status | grep 'Your branch is ahead' -c) -ne 0 ]
     then
       var=1
-      echo -en "\033[0;31m"
-      echo "Falta el commit"
-      echo -en "\033[0m"
+      echo -e "${red}Falta el commit${reset}"
     fi
 
     # Comprobamos si estado Ok
     if [ $var -eq 0 ]
     then
-      echo "Todo esta OK"
+      echo "Todo esta ${green}OK${reset}"
     fi
 
   else
