@@ -1,10 +1,5 @@
 # Check Git Repos
 
-Comprobar el estado de los repositorios
+Con este script comprobamos el estado de los repositorios que especifiquemos. Es necesario que junto al script, haya un archivo de texto llamado `git_dirs.txt`, donde escribimos la ruta absoluta del directorio.
 
-ToDo:
-- [ ] Poner acciones en funciones
-- [ ] Comprobar antes si existe el repo
-- [x] Comprobar el estado del repo
-- [ ] Comprobar si existe el remoto
-- [ ] Comprobar el estado del remoto
+
