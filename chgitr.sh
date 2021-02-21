@@ -60,7 +60,7 @@ while IFS= read -r line; do
     # Comprobamos si estado Ok
     if [ $var -eq 0 ]
     then
-      echo -e "Todo esta ${green}OK${reset}"
+      echo -e "${green}Todo esta OK${reset}"
     fi
 
   else
