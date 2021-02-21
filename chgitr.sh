@@ -1,7 +1,12 @@
 #!/bin/bash
 #
-# Comprobar el estado de los repositorios Git
+# Script para comprobar el estado de los Respositorios
 #
+# Version: 0.1
+# Author: Pablo M.
+#
+######################################################
+
 
 # Colores
 blue="\e[0;94m"
@@ -67,4 +72,4 @@ while IFS= read -r line; do
     echo "No es un Repositorio"
   fi
 
-done < git_dirs.txt
+done < gitdirs.txt
