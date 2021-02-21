@@ -23,6 +23,9 @@ while IFS= read -r line; do
   if [ -d "$SDIR/.git" ] 
   then
 
+    # Variable de testeo
+    var=0
+
     # Comprobamos si tiene remoto
     if [ $(git remote | grep "" -c) -ne 0 ]
     then
