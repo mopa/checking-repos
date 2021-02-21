@@ -72,4 +72,4 @@ while IFS= read -r line; do
     echo "No es un Repositorio"
   fi
 
-done < gitdirs.txt
+done < git_dirs.txt
